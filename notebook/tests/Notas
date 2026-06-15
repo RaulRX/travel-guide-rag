@@ -1,0 +1,20 @@
+
+
+LIMITACIONES:
+
+- Para calcular los tokens de output entre llamadas, no es tan facuil como llamar a usage_message (que solo se puede acceder al final), si no que se debe usar el contador de tokens pero de la respuesta en si
+
+Uar schemas sin Pydantic es complejo y arduo en Gemini, ya que no se puede usar directamente el schema, si no debes transformarlo a una Tool y meterlo como configuración
+
+
+Al eliminar paginas en blanco e imagenes y enlaces, se pierden en parte la referencia real de las paginas, asi como las imagenes y enlaces que puedan dar al usuario una mayor experiencia
+
+MEJORAS
+     - Añadir parte agentica para no tener que gestionar manualmente la llamada de herramientas
+     - Usar objetos pydantic para definir schemas
+     - Mejor gestión de incluir herramientras en la configuración
+     - Guardar vectores de los documentos en una BBDD
+     - Tener una evaluacion de las preguntas de pruebas
+     por categorias
+     - Uso de enlaces e imagenes de los documentos para dar al usuario una mayor perspèctiva de lo que se va a encontrar asi como una guia mas completa de cómo ir
+     - Una interfaz de usuario amigable que permita navegar por el historial, e incluso ver en un mapa las rutas o imagenes

@@ -1,0 +1,23 @@
+[project]
+name = "travel-guide-rag"
+version = "0.1.0"
+readme = "README.md"
+requires-python = "==3.11.*"
+dependencies = [
+  "google-genai",
+  "ipykernel",
+  "jupyterlab",
+  "langchain",
+  "langchain-community",
+  "langchain-core",
+  "langchain-google-genai",
+  "langchain-text-splitters",
+  "langgraph",
+  "pypdf",
+  "python-dotenv",
+  "tiktoken"
+]
+
+[tool.uv]
+package = false
+python-preference = "managed"
